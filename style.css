@@ -1,0 +1,157 @@
+/* FONTS */
+
+@font-face {
+    font-family: "Px Grotesk";
+    src: url("../fonts/Px Grotesk Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Px Grotesk";
+    src: url("../fonts/Px Grotesk Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Px Grotesk";
+    src: url("../fonts/Px Grotesk Regular Italic.ttf") format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Px Grotesk";
+    src: url("../fonts/Px Grotesk Screen.ttf") format("truetype");
+    font-weight: 400;   /*screen-schnitt, nicht per css selektierbar; nutzt bold-weight als ersatz*/
+    font-style: oblique;
+}
+
+/* COLORS */
+.orange{color:rgb(231,95,42)}
+.grey{color:rgb(185,184,184)}
+.green{color:rgb(90,220,129)}
+.yellow{color:rgb(245,255,42)}
+.lila{color:rgb(174,54,248)}
+.blue{color:rgb(0,65,236)}
+
+.pixel{font-style:oblique; letter-spacing:-0.1em; line-height:0.55}
+#landingcanvas .pixel{letter-spacing:-0.25em}
+
+/* GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+    /*cursor:url("cursor-pointer_small.png"),auto !important;*/
+}
+
+/*html{scroll-behavior: smooth;}*/
+
+html,
+body {
+    font-family:"Px Grotesk";
+    letter-spacing:-0.1em;
+    
+
+}
+
+body{
+    background:rgb(50,50,50);
+    background: linear-gradient(rgb(80,80,80), rgb(30,30,30));
+    width:100vw;
+    height:100vh;
+}
+
+/* HTML Stylings */
+a{text-decoration:none;}
+
+a:visited{color:inherit}
+
+a:hover{
+    font-style:oblique;
+    line-height:0.55;
+    letter-spacing:-0.05em;
+    display:inline-block;
+    -webkit-transform: skewX(-15deg);
+    -moz-transform: skewX(-15deg);
+     -ms-transform: skewX(-15deg);
+      -o-transform: skewX(-15deg);
+         transform: skewX(-15deg);
+}
+
+h1{
+    font-weight: lighter;
+    margin:0;
+    letter-spacing: -0.1em;
+    z-index: 9999;
+    font-size:8em;
+}
+
+h2{
+    color:grey;
+    font-weight:lighter;
+    margin:0 0.25em;
+    position: fixed;
+    bottom:0;
+    right:0;
+    text-align: right;}
+
+
+/*
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+*/
+
+/* Pop-Ups */
+.fotopopup{
+    border: 2px solid black;
+    background:black;
+    width:auto;
+    height:auto;
+    display:inline-block;
+    position:absolute;
+    top:20px;
+    left:40px;
+    z-index:1;
+    cursor:grab;    
+    /*box-shadow: 0 0 1em 0.125em rgba(80,80,80,1);*/
+}
+
+.fotopopup:active{cursor:grabbing;}
+
+.fotoheader{
+    border-bottom: 2px solid black;
+    width:100%;
+    height:0em;
+    font-size:0.5em;
+    /*padding:0.5em 2em;*/
+    background:red;
+}
+
+.foto{
+    margin:1em;
+}
+
+.popup-text{
+    padding:1em;
+}
+
+.popup-link{
+    margin:0 1em 1em;
+    padding:0.1em 0.2em;
+    display:inline-block;
+    background:;
+    border:2px solid black;
+}
+
+.armgart-popup{
+    top:20%;
+    left:30%;
+}
