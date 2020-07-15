@@ -48,6 +48,7 @@
     -webkit-box-sizing: border-box; 
      box-sizing: border-box; 
     /*cursor:url("cursor-pointer_small.png"),auto !important;*/
+    outline: none !important;
 }
 
 /*html{scroll-behavior: smooth;}*/
